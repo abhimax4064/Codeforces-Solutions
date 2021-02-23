@@ -1,2 +1,2 @@
 # CF-Solutions
-Codeforces Code
+Codeforces Solutions
