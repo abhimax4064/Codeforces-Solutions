@@ -88,29 +88,6 @@ typedef set<int> si;
 #define mp make_pair
 #define all(v) v.begin(),v.end()
 #define mod 1000000007
-bool CPT(ll n) {
-	return !(n & (n - 1));
-}
-int gcd(int a, int b)
-{
-	if (b == 0)
-		return a;
-	return gcd(b, a % b);
-}
-int lcm(int a, int b)
-{
-	return (a / gcd(a, b)) * b;
-}
-ll nC2(ll n) {
-	return n * (n - 1) / 2;
-}
-int countSquares(int a, int b)
-{
-	return (floor(sqrt(b)) - ceil(sqrt(a)) + 1);
-}
-bool mycmp(pair<int, int> &a, pair<int , int> &b) {
-	return (a.second < b.second);
-}
 void solve() {
 	ll n; cin >> n;
 	vi v(n);
